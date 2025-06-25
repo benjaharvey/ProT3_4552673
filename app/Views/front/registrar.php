@@ -83,30 +83,30 @@
       <h4>Registrar usuario</h4>
     </div>
     <div class="card-body rounded-4 shadow">
-      <form>
+      <form action="<?= base_url('usuario_controller/formValidation') ?>" method="post">
         <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+          <label for="nombre_usuario" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre_usuario" name="nombre_usuario" placeholder="Nombre">
         </div>
 
         <div class="mb-3">
-          <label for="apellido" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+          <label for="apellido_usuario" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="apellido_usuario" name="apellido_usuario" placeholder="Apellido">
         </div>
 
         <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail/hotmail/outlook.com">
+          <label for="email_usuario" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email_usuario" name="email_usuario" placeholder="ejemplo@gmail/hotmail/outlook.com">
         </div>
 
         <div class="mb-3">
           <label for="usuario" class="form-label">Usuario</label>
-          <input type="text" class="form-control" id="usuario" placeholder="Usuario">
+          <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario">
         </div>
 
         <div class="mb-3">
-          <label for="password" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="password" placeholder="Contraseña (por lo menos 5 caracteres)">
+          <label for="pass_usuario" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="pass_usuario" name="pass_usuario" placeholder="Contraseña (por lo menos 5 caracteres)">
         </div>
 
         <button type="submit" class="btn me-2 boton-registrar">Registrar</button>
