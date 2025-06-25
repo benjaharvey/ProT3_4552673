@@ -14,8 +14,18 @@ class Home extends BaseController
         return view('front/miembros-aeroclub');
     }
 
-      public function miembros(): string
+    public function servicios(): string
     {
-        return view('front/miembros-aeroclub');
+        return view('front/servicios');
+    }
+
+    public function registro(): string
+    {
+        return view('front/registrar');
+    }
+
+    public function inicioSesion(): string
+    {
+        return view('front/iniciar-sesion');
     }
 }

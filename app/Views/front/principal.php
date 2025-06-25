@@ -42,13 +42,13 @@
         <li class="nav-item dropdown">
 
            <button type="button" class="btn boton-servicios">
-              <a class="nav-link dropdown-toggle" href="servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="<?php  echo base_url('servicios') ?>" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Servicios
             </a>
               <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="servicios.html">Escuela de vuelo</a></li>
-            <li><a class="dropdown-item" href="servicios.html">Simulador de vuelo</a></li>
-            <li><a class="dropdown-item" href="servicios.html">Vuelos sobre la Ciudad de Corrientes</a></li>
+            <li><a class="dropdown-item" href="<?php  echo base_url('servicios') ?>">Escuela de vuelo</a></li>
+            <li><a class="dropdown-item" href="<?php  echo base_url('servicios') ?>">Simulador de vuelo</a></li>
+            <li><a class="dropdown-item" href="<?php  echo base_url('servicios') ?>">Vuelos sobre la Ciudad de Corrientes</a></li>
           </ul>
           </button>
         </li>
@@ -60,11 +60,11 @@
         <button class="btn boton-buscar" type="submit">Buscar</button>
 
         <button type="button" class="btn boton-inicio-sesion">
-          <a class="nav-link active" aria-current="page" href="iniciar-sesion.html">Iniciar Sesión</a>
+          <a class="nav-link active" aria-current="page" href="<?php  echo base_url('iniciar-sesion') ?>">Iniciar Sesión</a>
         </button>
 
         <button type="button" class="btn boton-registro">
-          <a class="nav-link active" aria-current="page" href="registrar.html">Registrarse</a>
+          <a class="nav-link active" aria-current="page" href="<?php  echo base_url('registrar') ?>">Registrarse</a>
         </button>
 
       </form>
