@@ -21,15 +21,30 @@
     public function formValidation() 
     {
         $input = $this->validate([
-            'nombre'    => 'required|min_length[3]',
-            'apellido'  => 'required|min_length[3]|max_length[25]',
-            'usuario'   => 'required|ming_length[3]',
-            'email'     => 'required|min_length[4]|max_length[100]|valid_email|is_unique[usuarios.email',
-            'pass'      => 'required|ming_length[3]|max_length[10]'
+            'nombre_usuario'    => 'required|min_length[3]',
+            'apellido_usuario'  => 'required|min_length[3]|max_length[25]',
+            'usuario'           => 'required|min_length[3]',
+            'email_usuario'     => 'required|min_length[4]|max_length[100]|valid_email|is_unique[usuarios.email]',
+            'pass_usuario'      => 'required|min_length[3]|max_length[10]'
         ],
         
     );
      $formModel = new usuario_Model();
 
+     if (!$input) {
+        return view('front/registrar', ['validation' => $this->validator]);
+
+     } else {
+        $formModel ->save([
+            'nombre_usuario' => $this->request->getVar('nombre_usuario'),
+            'apellido_usuario' => $this->request->getVar('apellido_usuario'),
+            'usuario' => $this->request->getVar('usuario'),
+            'email_usuario' => $this->request->getVar('email_usuario'),
+            'pass_usuario' => password_hash($this->request->getVar('pass_usuario'), PASSWORD_DEFAULT)
+        ]);
+
+        session()->setFlashdata('success', 'Usuario registrado con exito');
+        return $this->response->redirect('login');
+     }
     }
  }
