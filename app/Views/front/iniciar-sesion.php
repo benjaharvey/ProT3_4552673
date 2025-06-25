@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="miestilo.css">
-
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/miestilo.css">
     <title>Inicio de sesión</title>
 </head>
 <body>
 
 <header>
-       <!-- Barra de navegación hecha con Bootstrap-->
 
   <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand">
-        <img src="imagenes/logoaeroclub.png" alt="logo" width="90px">
+        <img src="assets/img/logoaeroclub.png" alt="logo" width="90px">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -27,7 +24,7 @@
         <li class="nav-item">
 
           <button type="button" class="btn boton-inicio" aria-current="page">
-            <a class="nav-link active" aria-current="page" href="principal.html">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="<?php  echo base_url('principal') ?>">Inicio</a>
           </button>
 
         </li>
@@ -35,7 +32,7 @@
         <li class="nav-item">
 
           <button type="button" class="btn boton-sobre-nosotros">
-            <a class="nav-link active" aria-current="page" href="miembros-aeroclub.html">Acerca de</a>
+            <a class="nav-link active" aria-current="page" href="<?php  echo base_url('miembros-aeroclub') ?>">Acerca de</a>
           </button>
 
         </li>
@@ -43,13 +40,13 @@
         <li class="nav-item dropdown">
 
            <button type="button" class="btn boton-servicios">
-              <a class="nav-link dropdown-toggle" href="servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="<?php  echo base_url('servicios') ?>" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Servicios
             </a>
               <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="servicios.html">Escuela de vuelo</a></li>
-            <li><a class="dropdown-item" href="servicios.html">Simulador de vuelo</a></li>
-            <li><a class="dropdown-item" href="servicios.html">Vuelos sobre la Ciudad de Corrientes</a></li>
+            <li><a class="dropdown-item" href="<?php  echo base_url('servicios') ?>">Escuela de vuelo</a></li>
+            <li><a class="dropdown-item" href="<?php  echo base_url('servicios') ?>">Simulador de vuelo</a></li>
+            <li><a class="dropdown-item" href="<?php  echo base_url('servicios') ?>">Vuelos sobre la Ciudad de Corrientes</a></li>
           </ul>
           </button>
         </li>
@@ -61,11 +58,11 @@
         <button class="btn boton-buscar" type="submit">Buscar</button>
 
         <button type="button" class="btn boton-inicio-sesion">
-          <a class="nav-link active" aria-current="page" href="iniciar-sesion.html">Iniciar Sesión</a>
+          <a class="nav-link active" aria-current="page" href="<?php  echo base_url('iniciar-sesion') ?>">Iniciar Sesión</a>
         </button>
 
         <button type="button" class="btn boton-registro">
-          <a class="nav-link active" aria-current="page" href="registrar.html">Registrarse</a>
+          <a class="nav-link active" aria-current="page" href="<?php  echo base_url('registrar') ?>">Registrarse</a>
         </button>
 
       </form>
@@ -145,6 +142,6 @@
 
 </footer>
 
-    <script src="bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>

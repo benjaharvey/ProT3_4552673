@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="miestilo.css">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/miestilo.css">
 
     <title>Servicios</title>
 </head>
@@ -16,10 +16,9 @@
   <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand">
-        <img src="imagenes/logoaeroclub.png" alt="logo" width="90px">
+        <img src="assets/img/logoaeroclub.png" alt="logo" width="90px">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -27,7 +26,7 @@
         <li class="nav-item">
 
           <button type="button" class="btn boton-inicio" aria-current="page">
-            <a class="nav-link active" aria-current="page" href="principal.html">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="<?php  echo base_url('principal') ?>">Inicio</a>
           </button>
 
         </li>
@@ -35,7 +34,7 @@
         <li class="nav-item">
 
           <button type="button" class="btn boton-sobre-nosotros">
-            <a class="nav-link active" aria-current="page" href="miembros-aeroclub.html">Acerca de</a>
+            <a class="nav-link active" aria-current="page" href="<?php  echo base_url('miembros-aeroclub') ?>">Acerca de</a>
           </button>
 
         </li>
@@ -43,13 +42,13 @@
         <li class="nav-item dropdown">
 
            <button type="button" class="btn boton-servicios">
-              <a class="nav-link dropdown-toggle" href="servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="<?php  echo base_url('servicios') ?>" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Servicios
             </a>
               <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="servicios.html">Escuela de vuelo</a></li>
-            <li><a class="dropdown-item" href="servicios.html">Simulador de vuelo</a></li>
-            <li><a class="dropdown-item" href="servicios.html">Vuelos sobre la Ciudad de Corrientes</a></li>
+            <li><a class="dropdown-item" href="<?php  echo base_url('servicios') ?>">Escuela de vuelo</a></li>
+            <li><a class="dropdown-item" href="<?php  echo base_url('servicios') ?>">Simulador de vuelo</a></li>
+            <li><a class="dropdown-item" href="<?php  echo base_url('servicios') ?>">Vuelos sobre la Ciudad de Corrientes</a></li>
           </ul>
           </button>
         </li>
@@ -61,11 +60,11 @@
         <button class="btn boton-buscar" type="submit">Buscar</button>
 
         <button type="button" class="btn boton-inicio-sesion">
-          <a class="nav-link active" aria-current="page" href="iniciar-sesion.html">Iniciar Sesión</a>
+          <a class="nav-link active" aria-current="page" href="<?php  echo base_url('iniciar-sesion') ?>">Iniciar Sesión</a>
         </button>
 
         <button type="button" class="btn boton-registro">
-          <a class="nav-link active" aria-current="page" href="registrar.html">Registrarse</a>
+          <a class="nav-link active" aria-current="page" href="<?php  echo base_url('registrar') ?>">Registrarse</a>
         </button>
 
       </form>
@@ -74,6 +73,7 @@
 </nav>
         
 </header>
+
 
 <main>
     <h1>¿Que servicios ofrece el Aeroclub Cañada Quiroz?</h1>
@@ -92,7 +92,7 @@
                 <p>El avión del aeroclub, comprado en el año 2020 mediante una colecta general entre miembros del aeroclub, es el avión el cual los socios pueden utilizar, anotandose previamente en una lista y pagando las horas de vuelo que vayan a ocupar. Los socios que no tengan licencia de piloto privado de avion (PPA), aun asi pueden acceder a este beneficio siempre y cuando la persona que este piloteando tenga la licencia requerida</p>
             </div>
             <div class="col me-4">
-              <img src="imagenes/fotos-aeroclub/avion-aeroclub.png" class=" w-50 h-auto img1" alt="">
+              <img src="assets/img/fotos-aeroclub/avion-aeroclub.png" class=" w-50 h-auto img1" alt="">
             </div>
         </div>
     </div>
@@ -109,7 +109,7 @@
                   Si siempre soñaste con volar, este es tu punto de partida!</p>
             </div>
             <div class="col me-4">
-              <img src="imagenes/escuela-vuelo/escuela-vuelo2.png" class="w-50 h-auto img1" alt="">
+              <img src="assets/img/escuela-vuelo/escuela-vuelo2.png" class="w-50 h-auto img1" alt="">
             </div>
         </div>
     </div>
@@ -123,7 +123,7 @@
                   Y esto recién empieza: pronto vamos a sumar una nueva aeronave que nos permitirá extender los recorridos y sobrevolar uno de los paisajes más lindos del país: los Esteros del Iberá. ¡No te lo podés perder!</p>
             </div>
             <div class="col me-4">
-              <img src="imagenes/vuelos-panoramicos/vuelo-panoramico4.png" class=" w-50 h-auto img1" alt="">
+              <img src="assets/img/vuelos-panoramicos/vuelo-panoramico4.png" class=" w-50 h-auto img1" alt="">
             </div>
         </div>
     </div>
@@ -136,7 +136,7 @@
                   También está disponible para pilotos con licencia que quieran practicar maniobras, actualizar conocimientos o prepararse para renovar sus habilitaciones. Ya sea para empezar a volar o seguir perfeccionándote, el simulador te permite vivir situaciones reales sin despegar del suelo.</p>
             </div>
             <div class="col me-4">
-                <img src="imagenes/simulador-vuelo/escuela de vuelo1.png" class=" w-50 h-auto img1" alt="">
+                <img src="assets/img/simulador-vuelo/escuela de vuelo1.png" class=" w-50 h-auto img1" alt="">
             </div>
         </div>
     </div>
@@ -225,6 +225,6 @@
 </footer>
 
 
-<script src="bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>

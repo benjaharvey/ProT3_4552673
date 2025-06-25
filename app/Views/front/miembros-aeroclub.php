@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="miestilo.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/miestilo.css">
 
     <title>Acerca de</title>
 </head>
@@ -16,10 +16,9 @@
   <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand">
-        <img src="imagenes/logoaeroclub.png" alt="logo" width="90px">
+        <img src="assets/img/logoaeroclub.png" alt="logo" width="90px">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -27,7 +26,7 @@
         <li class="nav-item">
 
           <button type="button" class="btn boton-inicio" aria-current="page">
-            <a class="nav-link active" aria-current="page" href="principal.html">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="<?php  echo base_url('principal') ?>">Inicio</a>
           </button>
 
         </li>
@@ -35,7 +34,7 @@
         <li class="nav-item">
 
           <button type="button" class="btn boton-sobre-nosotros">
-            <a class="nav-link active" aria-current="page" href="miembros-aeroclub.html">Acerca de</a>
+            <a class="nav-link active" aria-current="page" href="<?php  echo base_url('miembros-aeroclub') ?>">Acerca de</a>
           </button>
 
         </li>
@@ -43,13 +42,13 @@
         <li class="nav-item dropdown">
 
            <button type="button" class="btn boton-servicios">
-              <a class="nav-link dropdown-toggle" href="servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="<?php  echo base_url('servicios') ?>" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Servicios
             </a>
               <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="servicios.html">Escuela de vuelo</a></li>
-            <li><a class="dropdown-item" href="servicios.html">Simulador de vuelo</a></li>
-            <li><a class="dropdown-item" href="servicios.html">Vuelos sobre la Ciudad de Corrientes</a></li>
+            <li><a class="dropdown-item" href="<?php  echo base_url('servicios') ?>">Escuela de vuelo</a></li>
+            <li><a class="dropdown-item" href="<?php  echo base_url('servicios') ?>">Simulador de vuelo</a></li>
+            <li><a class="dropdown-item" href="<?php  echo base_url('servicios') ?>">Vuelos sobre la Ciudad de Corrientes</a></li>
           </ul>
           </button>
         </li>
@@ -61,11 +60,11 @@
         <button class="btn boton-buscar" type="submit">Buscar</button>
 
         <button type="button" class="btn boton-inicio-sesion">
-          <a class="nav-link active" aria-current="page" href="iniciar-sesion.html">Iniciar Sesión</a>
+          <a class="nav-link active" aria-current="page" href="<?php  echo base_url('iniciar-sesion') ?>">Iniciar Sesión</a>
         </button>
 
         <button type="button" class="btn boton-registro">
-          <a class="nav-link active" aria-current="page" href="registrar.html">Registrarse</a>
+          <a class="nav-link active" aria-current="page" href="<?php  echo base_url('registrar') ?>">Registrarse</a>
         </button>
 
       </form>
@@ -85,7 +84,7 @@
       
       <div class="col-md-4">
         <div class="card">
-          <img src="imagenes/quienes-somos/edwin-harvey.png" class="card-img-top" alt="Imagen 1">
+          <img src="assets/img/quienes-somos/edwin-harvey.png" class="card-img-top" alt="Imagen 1">
           <div class="card-body">
             <h5 class="card-title">Edwin E. Harvey</h5>
             <p class="card-text">Miembro del Aeroclub desde 2014 -- Presidente de la Comisión Directiva 2024-2025</p>
@@ -95,7 +94,7 @@
       
       <div class="col-md-4">
         <div class="card">
-          <img src="imagenes/quienes-somos/luis-quijano.png" class="card-img-top" alt="Imagen 2">
+          <img src="assets/img/quienes-somos/luis-quijano.png" class="card-img-top" alt="Imagen 2">
           <div class="card-body">
             <h5 class="card-title">Luis Quijano</h5>
             <p class="card-text">Miembro del Aeroclub desde 2022 -- Secretario de la Comisión Directiva 2024-2025</p>
@@ -105,7 +104,7 @@
       
       <div class="col-md-4">
         <div class="card">
-          <img src="imagenes/quienes-somos/agustin-migoya.png" class="card-img-top" alt="Imagen 3">
+          <img src="assets/img/quienes-somos/agustin-migoya.png" class="card-img-top" alt="Imagen 3">
           <div class="card-body">
             <h5 class="card-title">Ricardo A. Migoya</h5>
             <p class="card-text">Miembro del Aeroclub desde 2019 -- Tesorero de la Comisión Directiva 2024-2025</p>
@@ -122,7 +121,7 @@
       
       <div class="col-md-4">
         <div class="card">
-          <img src="imagenes/quienes-somos/nicolas-frid.png"card-img-top" alt="Imagen 1">
+          <img src="assets/img/quienes-somos/nicolas-frid.png"card-img-top" alt="Imagen 1">
           <div class="card-body">
             <h5 class="card-title">Nicolas Fríd</h5>
             <p class="card-text">Miembro del Aeroclub desde 2020 -- Piloto Comercial e Instructor de vuelo de la escuela de vuelo del Aeroclub</p>
@@ -132,7 +131,7 @@
       
       <div class="col-md-4">
         <div class="card">
-          <img src="imagenes/quienes-somos/ariel-ojeda.png" class="card-img-top" alt="Imagen 2">
+          <img src="assets/img/quienes-somos/ariel-ojeda.png" class="card-img-top" alt="Imagen 2">
           <div class="card-body">
             <h5 class="card-title">Ariel Ojeda</h5>
             <p class="card-text">Miembro del Aeroclub desde 2018 -- Piloto Comercial e Instructor de vuelo de la escuela de vuelo del Aeroclub</p>
@@ -142,7 +141,7 @@
       
       <div class="col-md-4">
         <div class="card">
-          <img src="imagenes/quienes-somos/carlos-verrastro.png" class="card-img-top" alt="Imagen 3">
+          <img src="assets/img/quienes-somos/carlos-verrastro.png" class="card-img-top" alt="Imagen 3">
           <div class="card-body">
             <h5 class="card-title">Carlos Verrastro</h5>
             <p class="card-text">Miembro del Aeroclub desde 2021 -- Ultimo graduado de la escuela de vuelo del Aeroclub. Graduado como Piloto Privado de Avion (PPA)</p>
@@ -161,7 +160,7 @@
       <p class="texto-bomberos bg-light p-4 rounded-4 shadow">Jornada organizada por Defensa Civil de la Provincia de Corrientes y por el Servicio Nacional de Manejo del Fuego, llevada a cabo en el Aeroclub Cañada Quiroz el 10 de Mayo del año 2024. La infraestructura de los aeroclubes de la provincia de Corrientes es fundamental para el desarrollo de esta actividades y es muy importante mantenerlas y formentar la creación de nuevos aeroclubes en nuestra provincia.</p>
     </div>
     <div class="col">
-      <img src="imagenes/quienes-somos/encuentro-bomberos.png" class="w-75 h-auto imagen-bomberos bg-light p-4 rounded-4 shadow" alt="...">
+      <img src="assets/img/quienes-somos/encuentro-bomberos.png" class="w-75 h-auto imagen-bomberos bg-light p-4 rounded-4 shadow" alt="...">
 
     </div>
   </div>
@@ -171,7 +170,7 @@
   <div class="container text-center">
   <div class="row">
     <div class="col">
-      <img src="imagenes/quienes-somos/encuentro-aviacion.png" class="w-80 h-auto imagen-bomberos bg-light p-4 rounded-4 shadow" alt="...">
+      <img src="assets/img/quienes-somos/encuentro-aviacion.png" class="w-80 h-auto imagen-bomberos bg-light p-4 rounded-4 shadow" alt="...">
     </div>
     <div class="col">
       <p class="texto-bomberos bg-light p-4 rounded-4 shadow">Festejo de los 10 años del Aeroclub Cañada Quiroz, celebrado con un gran encuentro aereo de diversos aeroclubes de la región, con alguno de los invitados brindando show aereos amateurs en aviones especializados</p>
@@ -220,6 +219,6 @@
 </footer>
 
 
-<script src="bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
