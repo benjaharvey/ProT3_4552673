@@ -83,20 +83,27 @@
     </div>
     <div class="card-body rounded-4 shadow">
 
-      <form>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="ejemplo@gmail/hotmail/outlook.com">
-        </div>
+<form action="<?= base_url('/enviarlogin') ?>" method="post">
+  <div class="mb-3">
+    <label for="email_usuario" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email_usuario" name="email_usuario" placeholder="ejemplo@gmail.com" required>
+  </div>
 
-        <div class="mb-3">
-          <label for="password" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="password" placeholder="Contraseña (por lo menos 5 caracteres)">
-        </div>
+  <div class="mb-3">
+    <label for="pass_usuario" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="pass_usuario" name="pass_usuario" placeholder="Contraseña (mínimo 5 caracteres)" required>
+  </div>
 
-        <button type="submit" class="btn me-2 boton-registrar">Registrar</button>
-        <button type="button" class="btn btn-danger">Cancelar</button>
-      </form>
+  <button type="submit" class="btn me-2 boton-registrar">Iniciar sesión</button>
+  <button type="button" class="btn btn-danger">Cancelar</button>
+
+  <?php if(session()->getFlashdata('msg')): ?>
+    <div class="alert alert-warning mt-2">
+      <?= session()->getFlashdata('msg') ?>
+    </div>
+  <?php endif; ?>
+</form>
+
 
     </div>
   </div>

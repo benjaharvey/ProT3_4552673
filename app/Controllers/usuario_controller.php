@@ -29,12 +29,10 @@
      $formModel = new usuario_Model();
 
     if (!$input) {
-        // 👇 AGREGÁS ESTE ECHO
         echo "Falló validación";
         return view('front/registrar', ['validation' => $this->validator]);
 
     } else {
-        // 👇 AGREGÁS ESTE ECHO
         echo "Validación correcta";
         
         $formModel ->save([

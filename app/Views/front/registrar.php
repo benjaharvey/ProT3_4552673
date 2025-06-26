@@ -83,6 +83,13 @@
       <h4>Registrar usuario</h4>
     </div>
     <div class="card-body rounded-4 shadow">
+
+      <?php if (isset($validation)): ?>
+      <div class="alert alert-danger">
+      <?= $validation->listErrors() ?>
+      </div>
+      <?php endif; ?>
+
       <form action="<?= base_url('usuario_controller/formValidation') ?>" method="post">
         <div class="mb-3">
           <label for="nombre_usuario" class="form-label">Nombre</label>
