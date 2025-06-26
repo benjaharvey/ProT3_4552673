@@ -28,4 +28,5 @@ $routes->get('/panel', 'Panel_controller::index',['filter' => 'auth']);
 $routes->get('/logout', 'Login_controller::logout');
 
 $routes->get('/panel', 'Panel_controller::index', ['filter' => 'auth']);
+$routes->get('usuario_controller/login', 'Login_controller::index');
 
